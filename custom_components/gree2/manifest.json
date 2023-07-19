@@ -1,0 +1,11 @@
+{
+  "domain": "gree2",
+  "name": "Gree A/C 2",
+  "codeowners": ["j1kwen", "@robhofmann"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/j1kwen/hass-gree-climate-component",
+  "issue_tracker": "https://github.com/j1kwen/hass-gree-climate-component/issues",
+  "requirements": ["pycryptodome"],
+  "version": "3.0.0"
+}
