@@ -1,0 +1,84 @@
+{
+    "config": {
+        "flow_title": "Gree Climate 2",
+        "step": {
+            "info": {
+                "title": "基本配置",
+                "description": "配置空调的设备信息",
+                "data": {
+                    "host": "IP地址",
+                    "port": "端口",
+                    "mac_addr": "mac地址",
+                    "name": "名称",
+                    "encryption_key": "密钥",
+                    "uid": "uid",
+                    "timeout": "超时时间",
+                    "temp_step": "温度调节步长",
+                    "temp_sensor": "温度传感器",
+                    "function": "启用的功能键",
+                    "hvac_modes": "空调功能",
+                    "fan_modes": "风扇模式"
+                },
+                "data_description": {
+                    "host": "IPv4地址",
+                    "port": "端口号，默认7000，范围0-65535",
+                    "mac_addr": "mac地址，11:22:33:aa:bb:cc",
+                    "name": "显示的名称",
+                    "encryption_key": "设备的加密密钥，留空则自动探测",
+                    "uid": "uid，可不填",
+                    "timeout": "超时时间，秒，默认10",
+                    "temp_step": "温度调节的步长，单位摄氏度",
+                    "temp_sensor": "绑定已添加的温度传感器",
+                    "function": "启用的功能键，将会生成按键实体",
+                    "hvac_modes": "选择启用的空调功能",
+                    "fan_modes": "设置支持的风扇模式"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "设备已存在"
+        },
+        "error": {
+            "device_not_found": "无法连接到设备，请检查参数",
+            "ip_format_error": "IP地址格式错误",
+            "port_error": "端口号错误",
+            "mac_addr_format_error": "mac地址错误",
+            "unknown_error": "未知错误"
+        }
+    }, 
+    "options": {
+        "flow_title": "Gree Climate 2",
+        "step": {
+            "info": {
+                "title": "基本配置",
+                "description": "IP：{ip}\nmac地址：{mac}",
+                "data": {
+                    "name": "名称",
+                    "encryption_key": "密钥",
+                    "uid": "uid",
+                    "timeout": "超时时间",
+                    "temp_step": "温度调节步长",
+                    "temp_sensor": "温度传感器",
+                    "function": "启用的功能键",
+                    "hvac_modes": "空调功能",
+                    "fan_modes": "风扇模式"
+                },
+                "data_description": {
+                    "name": "显示的名称",
+                    "encryption_key": "设备的加密密钥，留空则自动探测",
+                    "uid": "uid，可不填",
+                    "timeout": "超时时间，秒，默认10",
+                    "temp_step": "温度调节的步长，单位摄氏度",
+                    "temp_sensor": "绑定已添加的温度传感器",
+                    "function": "启用的功能键，将会生成按键实体",
+                    "hvac_modes": "选择启用的空调功能",
+                    "fan_modes": "设置支持的风扇模式"
+                }
+            }
+        },
+        "error": {
+            "device_not_found": "无法连接到设备，请检查参数",
+            "unknown_error": "未知错误"
+        }
+    }
+}
